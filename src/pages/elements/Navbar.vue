@@ -44,6 +44,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 3px solid #188755;
+  border-top: 3px solid #188755;
 }
 
 .logo {

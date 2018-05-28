@@ -1,7 +1,7 @@
 <template>
     <div class="Navmain">
         <button class="Contact" v-on:click="navToggle(); $router.push('/Contact')">CONTACT</button>
-        <div class="logo" v-on:click="navToggle(); $router.push('/')">Coding--Saves</div>
+        <div class="logo" v-on:click="navToggle(); $router.push('/')"></div>
         <button class="Donate" v-on:click="navToggle(); $router.push('/Donate')">DONATE</button>
       </div>
 </template>
@@ -39,20 +39,21 @@ export default {
 <style scoped>
 .Navmain {
   width: 100%;
-  height: 90px;
-  background-color: #188755;
+  height: 100px;
   position: fixed;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 1px 2px 5px black;
+  border-bottom: 3px solid #188755;
 }
 
 .logo {
+  background-image: url('../../assets/codingsaves.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 90%;
+  height: 80%;
+  margin-top: 10px;
   grid-column: 2;
   color: white;
   font-size: 1.5em;
@@ -62,7 +63,8 @@ button {
   border: none;
   background-color: transparent;
   height: 100px;
-  color: white;
+  color: black;
+  font-weight: 500;
   -webkit-animation-duration: .25s;
   animation-duration: .25s;
   -webkit-animation-fill-mode: both;

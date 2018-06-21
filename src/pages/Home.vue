@@ -5,6 +5,8 @@
     <transition name="slide"><div class="slide2" v-if="show === 1">Aiming to Inspire Students of All Ages to be the Technological Innovators of Tomorrow.</div></transition>
     <transition name="slide"><div class="slide3" v-if="show === 2">Working with Educators to Help Less Fortunate Students Learn Life Changing Skills.</div></transition>
   </div>
+  <h2>More Information Coming Soon!...</h2>
+  <div class="sa"></div>
   </div>
 </template>
 
@@ -36,11 +38,12 @@ export default {
 .main {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
+  padding-bottom: 100px;
 }
 .slidebox {
   position: fixed;
-  width: 70%;
+  width: 100%;
   height: 400px;
   background-color: black;
 }
@@ -71,7 +74,7 @@ export default {
   top: 0;
   text-align: left;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 400;
   padding-top: 300px;
   padding-left: 5%;
   padding-right: 10%;
@@ -92,7 +95,7 @@ export default {
   top: 0;
   text-align: left;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 400;
   padding-top: 300px;
   padding-left: 5%;
   padding-right: 10%;
@@ -113,17 +116,29 @@ export default {
   top: 0;
   text-align: left;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 400;
   padding-top: 300px;
   padding-left: 5%;
   padding-right: 10%;
   color: #fff;
   text-shadow: 1px 2px 5px black;
 }
+h2 {
+  margin-top: 500px;
+  text-align: center;
+}
+.sa {
+  background-image: url("../assets/SA.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 20%;
+}
 @media (min-width: 700px) {
   .slide1, .slide2, .slide3 {
-    font-size: 2.5em;
-    padding-top: 200px;
+    font-size: 2em;
+    padding-top: 250px;
   }
   .main {
     width: 70%;
@@ -131,10 +146,13 @@ export default {
     margin-right: 15%;
     box-shadow: 0px 5px 8px black;
   }
+  .slidebox {
+    width: 70%;
+  }
 }
 @media (min-width: 1000px) {
   .slide1, .slide2, .slide3 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     padding-top: 230px;
   }
 }

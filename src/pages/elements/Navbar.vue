@@ -66,7 +66,7 @@ button {
   height: 100px;
   color: white;
   text-shadow: 0px 2px 5px black;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.2em;
   -webkit-animation-duration: .25s;
   animation-duration: .25s;

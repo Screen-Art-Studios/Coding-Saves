@@ -4,12 +4,11 @@ var port = 81;
 var app = express();
 var router = express.Router();
 var path = __dirname + "/views/";
-require("./user");
 var email = require("./email.js");
 
 app.use(bodyParser.json());
 app.use(express.static(path));
-app.use("/",router);
+app.use("/", router);
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")

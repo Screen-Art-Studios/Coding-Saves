@@ -2,10 +2,10 @@
   <div class="main">
     <div class="colorback"></div>
     <h1>Send Us A Message</h1>
-    <input class="name" placeholder="Name" required>
-    <input class="email" placeholder="Email" required>
-    <input class="phone" placeholder="Phone">
-    <textarea class="message" placeholder="Message" required></textarea>
+    <input v-modal ="" class="name" placeholder="Name" required>
+    <input v-modal ="" class="email" placeholder="Email" required>
+    <input v-modal ="" class="phone" placeholder="Phone">
+    <textarea v-modal ="" class="message" placeholder="Message" required></textarea>
     <button class="send">SEND</button>
   </div>
 </template>

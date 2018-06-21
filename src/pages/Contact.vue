@@ -28,7 +28,7 @@ export default {
   methods: {
     submitMessage () {
       let vue = this
-      axios.post('https://52.53.126.148:81/email', {
+      axios.post('http://52.53.126.148:81/email', {
         name: vue.name.toLowerCase(),
         phone: vue.phone,
         email: vue.email,

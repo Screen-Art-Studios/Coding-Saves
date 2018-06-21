@@ -37,7 +37,6 @@ export default {
         .then(function (message) {
           vue.success = true
           console.log(message)
-          console.log(vue.leadId)
         })
         .catch(function (error) {
           console.log(error)

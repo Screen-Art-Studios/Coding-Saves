@@ -1,20 +1,11 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var mongoose = require('mongoose');
 var port = 81;
 var app = express();
 var router = express.Router();
 var path = __dirname + "/views/";
 require("./user");
-var users = require("./users.js");
-
-mongoose.Promise = global.Promise;
-
-mongoose.connect("mongodb://user:12345a@ds163480.mlab.com:63480/sole-proprietor", {
-  useMongoClient: true
-}, function (error) {
-  console.log(error);
-})
+var email = require("./email.js");
 
 app.use(bodyParser.json());
 app.use(express.static(path));
@@ -27,7 +18,7 @@ app.use(function(req, res, next) {
   next()
 })
 
-app.use("/users", users);
+app.use("/email", email);
 
 router.get("/", (req,res) => {
   res.sendFile(path + "index.html");

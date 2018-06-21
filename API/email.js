@@ -42,4 +42,6 @@ router.post('/', (req, res) =>  {
       res.send('success')
     }
   })
-}
+})
+
+module.exports = router;

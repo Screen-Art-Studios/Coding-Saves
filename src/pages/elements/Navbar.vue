@@ -43,8 +43,8 @@ export default {
   position: fixed;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 3px solid #188755;
-  border-top: 3px solid #188755;
+  z-index: 10;
+  margin-top: 20px;
 }
 
 .logo {
@@ -64,8 +64,10 @@ button {
   border: none;
   background-color: transparent;
   height: 100px;
-  color: black;
+  color: white;
+  text-shadow: 0px 2px 5px black;
   font-weight: 500;
+  font-size: 1.2em;
   -webkit-animation-duration: .25s;
   animation-duration: .25s;
   -webkit-animation-fill-mode: both;
@@ -81,9 +83,11 @@ button:hover {
 }
 .Contact {
   grid-column: 1;
+  text-align: right;
 }
 .Donate {
   grid-column: 3;
+  text-align: left;
 }
 
 @keyframes bounce {
